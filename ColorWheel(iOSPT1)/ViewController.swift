@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+
+    @IBAction func colorChanged(_ sender: ColorWheel) {
+        view.backgroundColor = sender.color
     }
-
-
+    
+    @IBAction func touchUpInside(_ sender: Any) {
+        view.backgroundColor = .white
+    }
+    
+    @IBAction func dragOutside(_ sender: Any) {
+        view.backgroundColor = .white
+    }
 }
 
